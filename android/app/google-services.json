@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "199615838937",
-    "project_id": "byapp-502a9",
-    "storage_bucket": "byapp-502a9.appspot.com"
+    "project_number": "323583007937",
+    "project_id": "appbayelsa",
+    "storage_bucket": "appbayelsa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:199615838937:android:9d7f2965c5dcbebc1a5cc8",
+        "mobilesdk_app_id": "1:323583007937:android:542690eb9d6094935c8840",
         "android_client_info": {
-          "package_name": "com.o3interactive.byapp"
+          "package_name": "com.o3interactive.appbayelsa"
         }
       },
       "oauth_client": [
         {
-          "client_id": "199615838937-2d1tslhtrha6ntcmaepvfln4emj8776d.apps.googleusercontent.com",
+          "client_id": "323583007937-rn2lqu6puee4gnlshv5gpgtsckinlvsc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDw7UqlM5T4dV2g-MHQw-ZdIwpzLOOOBA4"
+          "current_key": "AIzaSyD3b9WVGDXxYi9ajiRn_SZ7-enMmWEn0To"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "199615838937-2d1tslhtrha6ntcmaepvfln4emj8776d.apps.googleusercontent.com",
+              "client_id": "323583007937-rn2lqu6puee4gnlshv5gpgtsckinlvsc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

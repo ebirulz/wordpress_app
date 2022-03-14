@@ -18,6 +18,7 @@ import '../models/article.dart';
 import '../utils/cached_image.dart';
 import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ArticleDetails extends StatefulWidget {
   final String? tag;
@@ -190,27 +191,38 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                                           ],
                                         ),
                                         SizedBox(
-                                          width: 15,
+                                          width: 10,
                                         ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: <Widget>[
                                         Row(
                                           children: [
                                             CircleAvatar(
                                               radius: 8,
                                               backgroundImage:
-                                                  CachedNetworkImageProvider(
-                                                      article.avatar!),
+                                              CachedNetworkImageProvider(
+                                                  article.avatar!),
                                             ),
                                             SizedBox(
                                               width: 5,
                                             ),
-                                            Text(
-                                              'By ${article.author}',
-                                              style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .secondary,
-                                                  fontWeight: FontWeight.w600),
+                                            TextButton(
+                                                onPressed:(){
+                                                  const url = 'https://bayelsastate.gov.ng/';
+                                                  launchURL(url);
+                                                },
+                                                child: Text(
+                                                  //'By ${article.author}',
+                                                  'Source: Bayelsa State Government',
+                                                  style: TextStyle(
+                                                      fontSize: 14,
+                                                      color: Theme.of(context)
+                                                          .colorScheme
+                                                          .secondary,
+                                                      fontWeight: FontWeight.w600),
+                                                ),
                                             ),
                                           ],
                                         ),
@@ -298,5 +310,13 @@ class _ArticleDetailsState extends State<ArticleDetails> {
             ],
           ),
         ));
+  }
+}
+
+launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

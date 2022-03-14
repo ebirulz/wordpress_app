@@ -24,8 +24,8 @@ class _FeaturedState extends State<Featured> {
   @override
   void initState() {
     super.initState();
-    Timer.periodic(Duration(seconds: 10), (Timer timer) {
-      if (_currentPage == 3) {
+    Timer.periodic(Duration(seconds: 15), (Timer timer) {
+      if (_currentPage == 4) {
         end = true;
       } else if (_currentPage == 0) {
         end = false;
