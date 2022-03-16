@@ -41,18 +41,9 @@ class _WelcomePageState extends State<WelcomePage> {
                 style: ButtonStyle(),
                 child: Text(
                   'skip',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                 ).tr(),
                 onPressed: () => _onSkipPressed(),
-              ),
-              IconButton(
-                alignment: Alignment.center,
-                padding: EdgeInsets.all(0),
-                iconSize: 18,
-                icon: Icon(Feather.globe),
-                onPressed: () {
-                  nextScreenPopup(context, LanguagePopup());
-                },
               ),
             ],
           ),
@@ -70,7 +61,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     children: <Widget>[
                       Image(
                         image: AssetImage(Config.splash),
-                        height: 130,
+                        height: 200,
                       ),
                       SizedBox(
                         height: 40,
@@ -94,11 +85,15 @@ class _WelcomePageState extends State<WelcomePage> {
                               SizedBox(
                                 width: 5,
                               ),
-                              Image(
-                                image: AssetImage(Config.logo),
-                                height: 40,
-                                width: 160,
-                              )
+                              Text(
+                                '#appBayelsa',
+                                style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w300,
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .secondary),
+                              ).tr(),
                             ],
                           ),
                           Padding(

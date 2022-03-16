@@ -2,7 +2,7 @@ class WpConfig {
 
 
   // YOUR WEBISTE URL
-  static const String websiteUrl = "https://byapp.o3interactive.ng/";
+  static const String websiteUrl = "https://appbayelsa.name.ng/";
   static const String bayelsaUrl = "https://bayelsastate.gov.ng/";
   static const String developerUrl = "https://o3interactive.ng/";
 

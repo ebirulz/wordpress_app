@@ -305,7 +305,7 @@ class _CommentsPageState extends State<CommentsPage> {
                       textInputAction: TextInputAction.newline,
                       keyboardType: TextInputType.multiline,
                       style: TextStyle(
-                          color: Theme.of(context).colorScheme.primary),
+                          color: Colors.black),
                       decoration: InputDecoration(
                         errorStyle: TextStyle(fontSize: 0),
                         contentPadding: EdgeInsets.only(left: 15, right: 10),

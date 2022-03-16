@@ -28,11 +28,11 @@ class EmptyPageWithImage extends StatelessWidget {
             image,
             fit: BoxFit.contain,
             alignment: Alignment.center,
-            height: 180,
-            width: 180,
+            height: 90,
+            width: 90,
           ),
           SizedBox(
-            height: 30,
+            height: 10,
           ),
           
           Text(
