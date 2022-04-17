@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                     height: 30,
                     color: Colors.red,
                     child: Marquee(
-                      text: 'For sponsorship kindly contact the office of Technical Adviser on Information and Strategy',
+                      text: 'For Promotional Partnership and Advert Placement, please contact the Office of Marketing and Sales - O3INTERACTIVE TECHNOLOGIES (08153252227, 07034428600)',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize:14),
                       scrollAxis: Axis.horizontal, //scroll direction
                       crossAxisAlignment: CrossAxisAlignment.start,
